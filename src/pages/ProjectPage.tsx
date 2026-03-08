@@ -4,9 +4,9 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
-import projectRobot from "@/assets/project-robot.jpg";
-import projectClinic from "@/assets/project-clinic.jpg";
-import projectJdmatch from "@/assets/project-jdmatch.jpg";
+import projectRobot from "@/assets/project-robot-real.png";
+import projectClinic from "@/assets/project-clinic-real.jpg";
+import projectJdmatch from "@/assets/project-jdmatch-real.png";
 
 const imageMap: Record<string, string> = {
   "humanoid-receptionist": projectRobot,
@@ -97,22 +97,36 @@ const ProjectPage = () => {
               </div>
             </div>
 
-            {/* Placeholder for media */}
-            <div className="max-w-3xl">
-              <h2 className="font-heading text-xl font-semibold mb-4">
-                Demo <span className="gradient-text">Media</span>
-              </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="aspect-video bg-secondary rounded-xl border border-border flex items-center justify-center">
-                  <p className="text-muted-foreground text-sm">Demo video coming soon</p>
-                </div>
-                {project.id === "humanoid-receptionist" && (
-                  <div className="aspect-video bg-secondary rounded-xl border border-border flex items-center justify-center">
-                    <p className="text-muted-foreground text-sm">Arabic demo video coming soon</p>
+            {/* Demo Media */}
+            {project.id === "humanoid-receptionist" && (
+              <div className="max-w-4xl">
+                <h2 className="font-heading text-xl font-semibold mb-4">
+                  Demo <span className="gradient-text">Videos</span>
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-sm font-medium text-muted-foreground mb-2">English Demo</h3>
+                    <video
+                      controls
+                      className="w-full rounded-xl border border-border bg-card"
+                      poster={imageMap[project.id]}
+                    >
+                      <source src="/videos/AI-Robot-En.mp4" type="video/mp4" />
+                    </video>
                   </div>
-                )}
+                  <div>
+                    <h3 className="text-sm font-medium text-muted-foreground mb-2">Arabic Demo</h3>
+                    <video
+                      controls
+                      className="w-full rounded-xl border border-border bg-card"
+                      poster={imageMap[project.id]}
+                    >
+                      <source src="/videos/AI-Robot-Arabic.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
               </div>
-            </div>
+            )}
           </motion.div>
         </div>
       </div>
