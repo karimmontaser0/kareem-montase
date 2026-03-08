@@ -111,7 +111,8 @@ const ProjectPage = () => {
                       className="w-full rounded-xl border border-border bg-card"
                       poster={imageMap[project.id]}
                     >
-                      <source src="/videos/AI-Robot-En.mp4" type="video/mp4" />
+                      {/* 🚀 FIXED PATH */}
+                      <source src="/kareem-montase/videos/AI-Robot-En.mp4" type="video/mp4" />
                     </video>
                   </div>
                   <div>
@@ -121,7 +122,8 @@ const ProjectPage = () => {
                       className="w-full rounded-xl border border-border bg-card"
                       poster={imageMap[project.id]}
                     >
-                      <source src="/videos/AI-Robot-Arabic.mp4" type="video/mp4" />
+                      {/* 🚀 FIXED PATH */}
+                      <source src="/kareem-montase/videos/AI-Robot-Arabic.mp4" type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -139,7 +141,8 @@ const ProjectPage = () => {
                   className="w-full rounded-xl border border-border bg-card"
                   poster={imageMap[project.id]}
                 >
-                  <source src="/videos/Clinic-Bot.mp4" type="video/mp4" />
+                  {/* 🚀 FIXED PATH */}
+                  <source src="/kareem-montase/videos/Clinic-Bot.mp4" type="video/mp4" />
                 </video>
               </div>
             )}
@@ -155,7 +158,8 @@ const ProjectPage = () => {
                   className="w-full rounded-xl border border-border bg-card"
                   poster={imageMap[project.id]}
                 >
-                  <source src="/videos/JD-Coach.mp4" type="video/mp4" />
+                  {/* 🚀 FIXED PATH */}
+                  <source src="/kareem-montase/videos/JD-Coach.mp4" type="video/mp4" />
                 </video>
               </div>
             )}
