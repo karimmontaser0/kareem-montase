@@ -32,12 +32,12 @@ export const projects: Project[] = [
   },
   {
     id: "jd-match",
-    title: "JD-Match: AI Mock Interviewer",
-    shortTitle: "JD-Match",
-    skills: ["GenAI", "Prompt Engineering", "n8n", "Python"],
+    title: "JD-Match AI: Interview Copilot",
+    shortTitle: "JD-Match AI",
+    skills: ["Python", "Reflex", "Google Gemini API", "pdfplumber", "Radix UI"],
     description:
-      "A GenAI-powered tool that analyzes a candidate's CV against a Job Description and conducts a tailored mock interview via a custom n8n workflow. Generates role-specific interview questions and provides feedback.",
+      "Developed a full-stack, AI-powered interview preparation tool. The application takes a candidate's PDF resume and a target Job Description, parses the text, and uses Google's Gemini 2.5 Flash-Lite LLM to act as a senior technical recruiter. It identifies skill gaps and generates a tailored, high-level technical interview guide with 5 targeted questions and explanations.",
     image: "/src/assets/project-jdmatch.jpg",
-    results: "Automated CV-to-JD matching · Role-specific interview generation",
+    results: "Drag-and-drop PDF uploading · Real-time state management · AI-driven skill gap analysis · 5 targeted interview questions per session",
   },
 ];
