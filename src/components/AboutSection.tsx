@@ -10,7 +10,7 @@ const skills = [
 const AboutSection = () => {
   const handleDownloadCV = async () => {
     // 🚀 FIXED PATH: Added the repository name so GitHub Pages can find it
-    const pdfPath = "/kareem-montase/Kareem-Montaser-CV.pdf";
+    const pdfPath = "/My_Portfolio/Kareem-Montaser-CV.pdf";
 
     try {
       const response = await fetch(pdfPath);
