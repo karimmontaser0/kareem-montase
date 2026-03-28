@@ -8,7 +8,7 @@ import projectRobot from "@/assets/project-robot-real.png";
 import projectClinic from "@/assets/project-clinic-real.jpg";
 import projectJdmatch from "@/assets/project-jdmatch-real.png";
 // ✅ 1. ضفنا استدعاء صورة البروجكت الجديد هنا (لو صورتك png غير الامتداد)
-import projectSiemens from "@/assets/Siemens-AI-Maintenance-Assistant.jpg";
+import projectSiemens from "@/assets/Siemens-AI-Maintenance-Assistant.jpeg";
 
 const imageMap: Record<string, string> = {
   "humanoid-receptionist": projectRobot,
