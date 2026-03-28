@@ -2,7 +2,7 @@
 
 > A dynamic, fully responsive personal portfolio showcasing my expertise as an AI & Automation Engineer. Built to highlight my work in Generative AI, RAG pipelines, intelligent automation, and computer vision.
 
-🌐 **Live Demo:** [https://karimmontaser0.github.io/My_Portfolio/](https://karimmontaser0.github.io/My_Portfolio/)
+🌐 **Live Demo:** [Check out my Portfolio](https://karimmontaser0.github.io/My_Portfolio/)
 
 ---
 
@@ -13,6 +13,7 @@ This portfolio serves as a central hub for my professional and academic projects
 * **🎯 JD-Match (AI Mock Interviewer):** A RAG pipeline with vector embeddings and semantic search simulating technical interviews.
 * **🏥 Clinic Appointment Automation:** Orchestrated workflows using n8n and REST APIs to reduce administrative workload by 80%.
 * **🧠 VQA for Brain Tumor Diagnosis:** A hybrid CNN-Transformer model for medical MRI classification.
+* **🦾 Siemens S7-1200 AI Advisor:** An intelligent industrial assistant using RAG and Computer Vision to troubleshoot PLCs.
 
 ---
 
@@ -34,4 +35,4 @@ If you want to clone this repository and run the portfolio locally on your machi
 
 ### 1. Clone the repository
 ```bash
-git clone git clone https://github.com/karimmontaser0/My_Portfolio.git
+git clone https://github.com/karimmontaser0/My_Portfolio.git
