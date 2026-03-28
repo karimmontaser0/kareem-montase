@@ -7,11 +7,15 @@ import FooterSection from "@/components/FooterSection";
 import projectRobot from "@/assets/project-robot-real.png";
 import projectClinic from "@/assets/project-clinic-real.jpg";
 import projectJdmatch from "@/assets/project-jdmatch-real.png";
+// ✅ 1. ضفنا استدعاء صورة البروجكت الجديد هنا (لو صورتك png غير الامتداد)
+import projectSiemens from "@/assets/Siemens-AI-Maintenance-Assistant.jpg";
 
 const imageMap: Record<string, string> = {
   "humanoid-receptionist": projectRobot,
   "clinic-automation": projectClinic,
   "jd-match": projectJdmatch,
+  // ✅ 2. ربطنا الـ ID بتاع سيمنز بالصورة بتاعته
+  "siemens-ai-advisor": projectSiemens, 
 };
 
 const ProjectPage = () => {
@@ -111,7 +115,6 @@ const ProjectPage = () => {
                       className="w-full rounded-xl border border-border bg-card"
                       poster={imageMap[project.id]}
                     >
-                      {/* ✅ Path Fixed Here */}
                       <source src="/My_Portfolio/videos/AI-Robot-En.mp4" type="video/mp4" />
                     </video>
                   </div>
@@ -122,7 +125,6 @@ const ProjectPage = () => {
                       className="w-full rounded-xl border border-border bg-card"
                       poster={imageMap[project.id]}
                     >
-                      {/* ✅ Path Fixed Here */}
                       <source src="/My_Portfolio/videos/AI-Robot-Arabic.mp4" type="video/mp4" />
                     </video>
                   </div>
@@ -141,7 +143,6 @@ const ProjectPage = () => {
                   className="w-full rounded-xl border border-border bg-card"
                   poster={imageMap[project.id]}
                 >
-                  {/* ✅ Path Fixed Here */}
                   <source src="/My_Portfolio/videos/Clinic-Bot.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -158,11 +159,28 @@ const ProjectPage = () => {
                   className="w-full rounded-xl border border-border bg-card"
                   poster={imageMap[project.id]}
                 >
-                  {/* ✅ Path Fixed Here */}
                   <source src="/My_Portfolio/videos/JD-Coach.mp4" type="video/mp4" />
                 </video>
               </div>
             )}
+
+            {/* ✅ 3. قسم الفيديو الخاص بـ Siemens AI Advisor */}
+            {project.id === "siemens-ai-advisor" && (
+              <div className="max-w-4xl">
+                <h2 className="font-heading text-xl font-semibold mb-4">
+                  Live <span className="gradient-text">Demo</span>
+                </h2>
+                <video
+                  controls
+                  className="w-full rounded-xl border border-border bg-card"
+                  poster={imageMap[project.id]}
+                >
+                  {/* لما تجهز الفيديو بتاع سيمنز، حطه في فولدر الفيديوهات وسميه Siemens-Demo.mp4 */}
+                  <source src="/My_Portfolio/videos/Siemens-Demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            )}
+            
           </motion.div>
         </div>
       </div>
