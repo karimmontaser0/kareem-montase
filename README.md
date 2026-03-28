@@ -2,7 +2,7 @@
 
 > A dynamic, fully responsive personal portfolio showcasing my expertise as an AI & Automation Engineer. Built to highlight my work in Generative AI, RAG pipelines, intelligent automation, and computer vision.
 
-🌐 **Live Demo:** [https://karimmontaser0.github.io/My_Portfolio/](https://karimmontaser0.github.io/My_Portfolio/project/siemens-ai-advisor)
+🌐 **Live Demo:** [https://karimmontaser0.github.io/My_Portfolio/](https://karimmontaser0.github.io/My_Portfolio/)
 
 ---
 
@@ -34,4 +34,4 @@ If you want to clone this repository and run the portfolio locally on your machi
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/karimmontaser0/My_Portfolio.git](https://github.com/karimmontaser0/My_Portfolio.git)
+git clone git clone https://github.com/karimmontaser0/My_Portfolio.git
