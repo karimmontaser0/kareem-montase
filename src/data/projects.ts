@@ -40,4 +40,15 @@ export const projects: Project[] = [
     image: "/src/assets/project-jdmatch.jpg",
     results: "Drag-and-drop PDF uploading · Real-time state management · AI-driven skill gap analysis · 5 targeted interview questions per session",
   },
+  // ✅ البروجكت الجديد بتاع سيمنز أهو انضاف بالـ Interface المظبوط
+  {
+    id: "siemens-ai-advisor",
+    title: "Siemens S7-1200 AI Advisor",
+    shortTitle: "Siemens AI Advisor",
+    skills: ["Python", "Gemini 2.0 Flash", "LangChain", "Computer Vision", "Streamlit"],
+    description:
+      "An intelligent industrial assistant designed to help mechatronics engineers and technicians troubleshoot PLCs. This tool leverages RAG to search technical manuals and Computer Vision to analyze TIA Portal diagnostic screenshots in real-time.",
+    image: "/src/assets/Siemens-AI-Maintenance-Assistant.jpeg",
+    results: "RAG-Powered Manual Search · Visual Diagnostic Analysis · Context-Aware Industrial Logic",
+  }
 ];
