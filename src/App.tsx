@@ -14,11 +14,13 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* 🚀 ADDED THE BASENAME HERE */}
-      <BrowserRouter basename="/My_Portfolio/">
+      {/* 💡 ملحوظة: شيلنا الـ basename واستخدمنا المسار الكامل في الـ Route */}
+      <BrowserRouter>
         <Routes>
+          <Route path="/My_Portfolio/" element={<Index />} />
+          <Route path="/My_Portfolio/project/:id" element={<ProjectPage />} />
+          {/* الـ Route ده عشان لو حد دخل من غير اسم الـ repo يوديه للـ Home برضه */}
           <Route path="/" element={<Index />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
